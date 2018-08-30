@@ -8,7 +8,7 @@ Include JS file in your HTML page, include optionnal dependencies (Icon fonts).
 Change ```nav.innerHTML``` values as you wish, with your own syntax, text or icons.
 For integrate the Night Mode button, just add the id "menu-primary" to your menu.
 
-Create new css rules with ".night-mode" style (Feel free to customize your night mode as you want!
+Create new css rules with ".night-mode" style (Feel free to customize your night mode as you want!)
 
 ## Authors
 
