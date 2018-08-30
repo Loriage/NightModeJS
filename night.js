@@ -1,22 +1,23 @@
 ;(function (window, document, undefined) {
 	'use strict';
-	if (!('localStorage' in window)) return;
+	if (!('localStorage' in window))
+		return;
 	var nightMode = localStorage.getItem('gmtNightMode');
-	if (nightMode) {
+	if (nightMode)
 		document.documentElement.className += ' night-mode';
-	}
 })(window, document);
 
 ;(function (window, document, undefined) {
-	
 	'use strict';
 
 	// Feature test
-	if (!('localStorage' in window)) return;
+	if (!('localStorage' in window))
+		return;
 
 	// Get the navigation menu
 	var nav = document.querySelector('#menu-primary');
-	if (!nav) return;
+	if (!nav)
+		return;
 
 	/* Insert the night mode toggle (Check cookies for icon's use)  **
 	** Change HTML code bellow by yours				*/
@@ -27,7 +28,8 @@
 	
 	// Get our newly insert toggle
 	var nightMode = document.querySelector('#night-mode');
-	if (!nightMode) return;
+	if (!nightMode)
+		return;
 
 	// When clicked, toggle night mode on or off
 	nightMode.addEventListener('click', function (event) {
@@ -37,7 +39,7 @@
 			document.getElementById('iconID').className = "zmdi zmdi-brightness-5 zmdi-hc-2x";
 		else
 		    	document.getElementById('iconID').className = "zmdi zmdi-brightness-2 zmdi-hc-2x";
-		if ( document.documentElement.classList.contains('night-mode') ) {
+		if (document.documentElement.classList.contains('night-mode')) {
 			localStorage.setItem('gmtNightMode', true);
 			return;
 		}
